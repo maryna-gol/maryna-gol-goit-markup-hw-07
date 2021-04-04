@@ -1,0 +1,85 @@
+.header-portfolio {
+  border-bottom: 1px solid var(--header-border);
+}
+
+.nav-portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.list-btn-portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 8px;
+  margin-top: 8px;
+  text-align: center;
+
+  justify-content: center;
+  /* raspologaet elementi på centry */
+
+  margin-bottom: 50px;
+  align-items: center;
+}
+.btn-portfolio:not(:last-child) {
+  margin-right: 8px;
+}
+/*.portfolio-btn {
+  flex-basis: calc(100% / 5 - 8px);
+  margin-left: 8px;
+  margin-top: 8px;
+}*/
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+  /* justify-content: space-between; */
+}
+
+.portfolio-list-item {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.portfolio {
+  background: var(--main-color);
+}
+
+.portfolio-btn {
+  display: inline-block;
+  text-align: center;
+  padding: 6px 22px 6px 22px;
+  border-radius: 4px;
+  border: none;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  display: flex;
+  letter-spacing: 0.06em;
+  text-align: center;
+  cursor: pointer;
+
+  color: var(--nav-color);
+  background: var(--team-background);
+
+  display: flex;
+  justify-content: center;
+
+  transition: background-color var(--transition-duration) var(--timing-function),
+    color var(--transition-duration) var(--timing-function), box-shadow vat(--transition-duration) var(--timing-function);
+
+  /*transition-property: bckground-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);*/
+
+
+  &:hover,
+  &:focus {
+    color: var(--main-color);
+    background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}

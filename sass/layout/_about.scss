@@ -1,0 +1,39 @@
+.about {
+  padding-bottom: 94px;
+}
+.about-lists {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -50px;
+}
+
+.about-lists__items {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-top: 50px;
+}
+.about-lists__card {
+  position: relative;
+}
+.about-lists__desc {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 23.8%;
+  background-color: var(--title-pictures);
+}
+.about-lists__title {
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+  padding: 27px 82px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-color);
+  text-align: center;
+}

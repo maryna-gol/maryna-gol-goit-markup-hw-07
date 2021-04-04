@@ -1,0 +1,50 @@
+.advantage {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.advantage_lists {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -30px;
+  & :first-child {
+    margin-left: 0;
+  }
+}
+
+.advantage_lists__title {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--nav-color);
+}
+
+.advantage_lists__item {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-left: 30px;
+}
+
+.fadvantage_lists__desc {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--tel-link-color);
+}
+.advantage_lists__card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  width: 270px;
+  height: 120px;
+  background-color: var(--team-background);
+}
+
+.advantage_lists__icon {
+  width: 70px;
+  height: 70px;
+}
