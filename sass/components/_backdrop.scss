@@ -5,7 +5,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: var(--modal-background);
+  background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
 
   transition: opacity var(--transition-duration) var(--transition-function);
