@@ -98,6 +98,16 @@ body {
   max-width: 696px;
 }
 
+.title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--nav-color);
+}
+
 .logo {
   font-family: var(--secondary-font);
   font-weight: 700;
@@ -142,16 +152,6 @@ body {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-}
-
-.title {
-  margin-bottom: 50px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--nav-color);
 }
 
 .soc-list {
@@ -653,11 +653,11 @@ body {
 }
 
 .advantage_lists__description {
+  color: #757575;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-  color: var(--tel-link-color);
 }
 
 .advantage_lists__card {
@@ -919,10 +919,10 @@ body {
 }
 
 .contact__footer-link {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
   color: var(--footer-link);
   -webkit-transition: color var(--transition-duration) var(--transition-function);
   transition: color var(--transition-duration) var(--transition-function);
@@ -1153,10 +1153,10 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-transition: background-color var(--transition-duration) var(--timing-function), color var(--transition-duration) var(--timing-function), -webkit-box-shadow vat(--transition-duration) var(--timing-function);
-  transition: background-color var(--transition-duration) var(--timing-function), color var(--transition-duration) var(--timing-function), -webkit-box-shadow vat(--transition-duration) var(--timing-function);
-  transition: background-color var(--transition-duration) var(--timing-function), color var(--transition-duration) var(--timing-function), box-shadow vat(--transition-duration) var(--timing-function);
-  transition: background-color var(--transition-duration) var(--timing-function), color var(--transition-duration) var(--timing-function), box-shadow vat(--transition-duration) var(--timing-function), -webkit-box-shadow vat(--transition-duration) var(--timing-function);
+  -webkit-transition: background-color var(--transition-duration) var(--transition-function), color var(--transition-duration) var(--transition-function), -webkit-box-shadow var(--transition-duration) var(--transition-function);
+  transition: background-color var(--transition-duration) var(--transition-function), color var(--transition-duration) var(--transition-function), -webkit-box-shadow var(--transition-duration) var(--transition-function);
+  transition: background-color var(--transition-duration) var(--transition-function), color var(--transition-duration) var(--transition-function), box-shadow var(--transition-duration) var(--transition-function);
+  transition: background-color var(--transition-duration) var(--transition-function), color var(--transition-duration) var(--transition-function), box-shadow var(--transition-duration) var(--transition-function), -webkit-box-shadow var(--transition-duration) var(--transition-function);
   /*transition-property: bckground-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);*/
@@ -1217,7 +1217,6 @@ body {
 }
 
 .card-overlay {
-  opacity: 0;
   position: absolute;
   top: 0;
   left: 0;
@@ -1226,19 +1225,22 @@ body {
   background-color: var(--accent-color);
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
-  -webkit-transition: var(transition-duration) var(--timing-function);
-  transition: var(transition-duration) var(--timing-function);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-link:hover .card-overlay {
   -webkit-transform: translateY(0);
           transform: translateY(0);
-  opacity: 1;
 }
 
 .portfolio-link {
-  -webkit-transition: var(transition-duration) var(--timing-function);
-  transition: var(transition-duration) var(--timing-function);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card-content {

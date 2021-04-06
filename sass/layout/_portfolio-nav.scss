@@ -67,8 +67,8 @@
   display: flex;
   justify-content: center;
 
-  transition: background-color var(--transition-duration) var(--timing-function),
-    color var(--transition-duration) var(--timing-function), box-shadow vat(--transition-duration) var(--timing-function);
+  transition: background-color var(--transition-duration) var(--transition-function),
+    color var(--transition-duration) var(--transition-function), box-shadow var(--transition-duration) var(--transition-function);
 
   /*transition-property: bckground-color;
   transition-duration: 250ms;
